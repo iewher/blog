@@ -4,7 +4,14 @@ import '../../style/header/header.scss';
 export const Header = () => {
     return (
         <div className="header">
-            123
+            <div className="header-name">
+                <p>blog-app</p>
+            </div>
+            <div className="header-buttons">
+                <button>Название</button>
+                <button>Название</button>
+                <button>Название</button>
+            </div>
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../style/header/header.scss';
+import { BiUser } from 'react-icons/bi';
 
 export const Header = () => {
     return (
@@ -11,6 +12,9 @@ export const Header = () => {
                 <button>Название</button>
                 <button>Название</button>
                 <button>Название</button>
+            </div>
+            <div className="header-user">
+                <button><BiUser /></button>
             </div>
         </div>
     )

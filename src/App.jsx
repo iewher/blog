@@ -4,13 +4,13 @@ import './style/style.scss';
 import { Header } from './components/header/header.jsx';
 import { Footer } from './components/footer/footer.jsx';
 
-import { Home } from './pages/home/home';
+import { Main } from './pages/main/main';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
+      <Main />
       <Footer />
     </div>
   );

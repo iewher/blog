@@ -29,6 +29,7 @@
       p {
         font-size: 14px;
         line-height: 20px;
+        color: rgba(192, 192, 192, 1);
       }
 
       h1 {
@@ -47,6 +48,7 @@
     p {
       font-size: 14px;
       line-height: 20px;
+      color: rgba(192, 192, 192, 1);
     }
 
     h1 {
@@ -96,6 +98,7 @@
               font-size: 14px;
               line-height: 20px;
               width: 500px;
+              color: rgba(192, 192, 192, 1);
             }
 
             button {
@@ -153,6 +156,10 @@
       background-color: #000;
       color: #fff;
       padding: 0 60px;
+
+      p {
+        color: rgba(192, 192, 192, 1);
+      }
 
       button {
         width: 150px;

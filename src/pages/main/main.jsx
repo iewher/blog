@@ -22,7 +22,7 @@ export const Main = () => {
       <div className="main-banner">
         <img src={banner} />
         <div className="main-banner-text">
-          <p>Photographer & Filmmaker</p>
+          <h3>Photographer & Filmmaker</h3>
           <h1>Aperture Studios</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse

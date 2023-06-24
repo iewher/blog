@@ -2,6 +2,12 @@ $white: #fff;
 $black: #000;
 $color-text: rgba(192, 192, 192, 1);
 
+@mixin flex($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
 .main {
   height: fit-content;
   width: 100%;
@@ -19,9 +25,7 @@ $color-text: rgba(192, 192, 192, 1);
     }
 
     &-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(center, center);
       flex-direction: column;
       text-align: center;
       width: 580px;
@@ -63,9 +67,8 @@ $color-text: rgba(192, 192, 192, 1);
       height: fit-content;
 
       &-text {
-        display: flex;
+        @include flex(none, center);
         flex-direction: column;
-        align-items: center;
       }
 
       &-blocks {
@@ -152,11 +155,10 @@ $color-text: rgba(192, 192, 192, 1);
     display: flex;
 
     &-left {
+      @include flex(center, none);
+      flex-direction: column;
       width: 50%;
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       background-color: $black;
       color: $white;
       padding: 0 60px;
@@ -223,13 +225,11 @@ $color-text: rgba(192, 192, 192, 1);
   }
 
   &-clients {
+    @include flex(center, center);
+    flex-direction: column;
     height: 500px;
     width: 100%;
     background-color: $black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
     h1 {
       font-size: 40px;
@@ -272,13 +272,11 @@ $color-text: rgba(192, 192, 192, 1);
   }
 
   &-needs {
+    @include flex(center, center);
+    flex-direction: column;
     height: 500px;
     width: 100%;
     background-color: $black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
     h1 {
       font-size: 40px;

@@ -1,25 +1,25 @@
 $white: #fff;
 $black: #000;
 
-@mixin flex($display, $justify-content, $align-items) {
-  display: $display;
+@mixin flex($justify-content, $align-items) {
+  display: flex;
   justify-content: $justify-content;
   align-items: $align-items;
 }
 
 .header {
+  @include flex(center, center);
   height: 90px;
   width: 100%;
   border: 1px solid $black;
   flex-wrap: wrap;
-  @include flex(flex, center, center);
   background-color: $black;
 
   &-name {
+    @include flex(center, center);
     height: 100%;
     width: 30%;
     color: $white;
-    @include flex(flex, center, center);
     text-align: center;
     font-size: 31px;
 
@@ -29,8 +29,8 @@ $black: #000;
   }
 
   &-buttons {
+    @include flex(center, center);
     height: 100%;
-    @include flex(flex, center, center);
     width: 70%;
 
     button {

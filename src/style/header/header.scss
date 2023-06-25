@@ -10,6 +10,7 @@ $black: #000;
 .header {
   @include flex(center, center);
   height: fit-content;
+  min-height: 100px;
   width: 100%;
   border: 1px solid $black;
   flex-wrap: wrap;
@@ -21,7 +22,7 @@ $black: #000;
     width: 30%;
     color: $white;
     text-align: center;
-    font-size: 31px;
+    font-size: clamp(25px, 2vw, 31px);
 
     @media (max-width: 1100px) {
       margin-top: 10px;
@@ -36,6 +37,7 @@ $black: #000;
     @include flex(center, center);
     height: 100%;
     width: 70%;
+    flex-wrap: wrap;
 
     button {
       margin: 0 1rem;
@@ -45,7 +47,7 @@ $black: #000;
       border-radius: 10px;
       transition: 0.3s;
       padding: 9px 20px;
-      font-size: clamp(11px, 2vw, 20px);
+      font-size: clamp(14px, 2vw, 20px);
 
       &:hover {
         background-color: $white;
@@ -67,7 +69,7 @@ $black: #000;
       border-radius: 10px;
       transition: 0.3s;
       padding: 9px 20px;
-      font-size: clamp(11px, 2vw, 20px);
+      font-size: clamp(14px, 2vw, 20px);
 
       &:hover {
         background-color: $black;

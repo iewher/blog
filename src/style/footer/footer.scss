@@ -47,4 +47,8 @@ $black: #000;
     height: 80px;
     margin-top: 20px;
   }
+
+  @media (max-width: 1200px) {
+    padding: 0 16px;
+  }
 }

@@ -1,3 +1,15 @@
+# Preview
+
+Images of my project, you can see how it will look on a PC and on a mobile phone
+
+<div align="center">
+  
+## on PC
+
+<image src="public/forgithub.png" height="auto" width="700">
+  
+</div>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

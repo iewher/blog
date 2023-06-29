@@ -1,18 +1,32 @@
 import React from "react";
 import "../../style/header/header.scss";
 
+import { Link } from "react-router-dom";
+
 export const Header = () => {
   return (
     <div className="header">
       <div className="header-name">
-        <p>blog-app</p>
+        <Link to="">
+          <p>blog-app</p>
+        </Link>
       </div>
       <div className="header-buttons">
-        <button>Business areas</button>
-        <button>Featured images</button>
-        <button>Gaer cage</button>
-        <button>Contact</button>
-        <button className="__other">Get template</button>
+        <Link to="/111">
+          <button>Business areas</button>
+        </Link>
+        <Link to="/123">
+          <button>Featured images</button>
+        </Link>
+        <Link to="/345">
+          <button>Gaer cage</button>
+        </Link>
+        <Link to="/567">
+          <button>Contact</button>
+        </Link>
+        <Link to="/789">
+          <button className="__other">Get template</button>
+        </Link>
       </div>
     </div>
   );

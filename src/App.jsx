@@ -1,18 +1,25 @@
-import React from 'react';
-import './style/style.scss';
+import React from "react";
+import "./style/style.scss";
 
-import { Header } from './components/header/header.jsx';
-import { Footer } from './components/footer/footer.jsx';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Main } from './pages/main/main';
+import { Header } from "./components/header/header.jsx";
+import { Footer } from "./components/footer/footer.jsx";
+
+import { Main } from "./pages/main/main";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
+        <Main />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

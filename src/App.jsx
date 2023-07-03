@@ -16,7 +16,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
         </Routes>
-        <Main />
         <Footer />
       </div>
     </BrowserRouter>

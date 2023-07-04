@@ -5,7 +5,6 @@ import banner from "../../img/main/main-banner.svg";
 function MainBanner() {
   return (
     <div className="main-banner">
-      <img src={banner} />
       <div className="main-banner-text">
         <h3>Photographer & Filmmaker</h3>
         <h1>Aperture Studios</h1>

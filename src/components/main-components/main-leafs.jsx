@@ -5,7 +5,6 @@ import leafs from "../../img/main/main-leafs.svg";
 function MainLeafs() {
   return (
     <div className="main-leafs">
-      <img src={leafs} />
       <div className="main-leafs-text">
         <h1>Monstera Leafs</h1>
         <p>

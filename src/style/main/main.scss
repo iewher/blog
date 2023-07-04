@@ -13,26 +13,20 @@ $color-text: rgba(192, 192, 192, 1);
   width: 100%;
 
   &-banner {
-    position: relative;
     text-align: center;
     color: $white;
     height: 768px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    background-image: url('../../img/main/main-banner.svg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 
     &-text {
       @include flex(center, center);
       flex-direction: column;
       text-align: center;
       width: 100%;
-      position: absolute;
-      top: 80%;
-      left: 50%;
-      transform: translate(-50%, -50%);
 
       p {
         font-size: clamp(12px, 2vw, 14px);
@@ -139,26 +133,18 @@ $color-text: rgba(192, 192, 192, 1);
   &-mountain {
     height: 600px;
     width: 100%;
-    position: relative;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    background-image: url("../../img/main/main-mountain.svg");
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 
     &-text {
       width: 300px;
       font-size: 14px;
       line-height: 20px;
       color: $white;
-      position: absolute;
-      top: 50%;
-      left: 75%;
-
-      @media (max-width: 1200px) {
-        left: 10%;
-      }
+      margin-right: 15px;
     }
   }
 
@@ -234,21 +220,17 @@ $color-text: rgba(192, 192, 192, 1);
   &-leafs {
     width: 100%;
     height: 600px;
-    position: relative;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    background-image: url("../../img/main/main-leafs.svg");
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 
     &-text {
       font-size: 14px;
       line-height: 20px;
-      position: absolute;
-      top: 50%;
-      left: 75%;
       width: 300px;
+      margin-right: 15px;
 
       h1 {
         color: $white;
@@ -287,21 +269,17 @@ $color-text: rgba(192, 192, 192, 1);
   &-stars {
     width: 100%;
     height: 600px;
-    position: relative;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    background-image: url('../../img/main/main-stars.svg');
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 
     &-text {
       font-size: 14px;
       line-height: 20px;
-      position: absolute;
-      top: 50%;
-      left: 75%;
       width: 300px;
+      margin-right: 15px;
 
       h1 {
         color: $white;

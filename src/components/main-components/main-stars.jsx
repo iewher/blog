@@ -5,7 +5,6 @@ import stars from "../../img/main/main-stars.svg";
 function MainStars() {
   return (
     <div className="main-stars">
-      <img src={stars} />
       <div className="main-stars-text">
         <h1>Star fall in the Himalayas</h1>
         <p>

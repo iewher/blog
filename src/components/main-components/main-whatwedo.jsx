@@ -25,7 +25,7 @@ function MainWhatWeDo() {
 
                 <Popover.Panel className="absolute z-10">
                   <div className="grid grid-cols-2">
-                    <p>
+                    <p classname="main-whatwedo-container-blocks-block-text-popover">
                       {" "}
                       Cras commodo consequat orci, in convallis risus egestas
                       non. Nulla efficitur auctor hendrerit. Etiam ut orci
@@ -45,7 +45,7 @@ function MainWhatWeDo() {
 
                 <Popover.Panel className="absolute z-10">
                   <div className="grid grid-cols-2">
-                    <p>
+                    <p classname="main-whatwedo-container-blocks-block-text-popover">
                       {" "}
                       Cras commodo consequat orci, in convallis risus egestas
                       non. Nulla efficitur auctor hendrerit. Etiam ut orci
@@ -66,7 +66,7 @@ function MainWhatWeDo() {
 
                 <Popover.Panel className="absolute z-10">
                   <div className="grid grid-cols-2">
-                    <p>
+                    <p classname="main-whatwedo-container-blocks-block-text-popover">
                       {" "}
                       Cras commodo consequat orci, in convallis risus egestas
                       non. Nulla efficitur auctor hendrerit. Etiam ut orci
@@ -86,7 +86,7 @@ function MainWhatWeDo() {
 
                 <Popover.Panel className="absolute z-10">
                   <div className="grid grid-cols-2">
-                    <p>
+                    <p classname="main-whatwedo-container-blocks-block-text-popover">
                       {" "}
                       Cras commodo consequat orci, in convallis risus egestas
                       non. Nulla efficitur auctor hendrerit. Etiam ut orci

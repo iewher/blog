@@ -21,12 +21,13 @@ function MainTools() {
 
           <Popover.Panel className="absolute z-10">
             <div className="grid grid-cols-2">
-              <p>
+              <p className="main-tools-left-popover">
                 {" "}
-                The say that "no place is boring if you've had a good night's
-                sleep and have a pocket full of unexposed film". While we don't
-                shoot (a lot) of film these days — these are the tools that we
-                actually use everyday to capture the amazing things around us.
+                1. Canon EOS R50
+                <br /> 2. Fujifilm X-H2S
+                <br /> 3. Canon EOS R8
+                <br /> 4. Sony A7R V
+                <br /> 5. Sony ZV-E1
               </p>
             </div>
           </Popover.Panel>

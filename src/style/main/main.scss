@@ -92,6 +92,10 @@ $color-text: rgba(192, 192, 192, 1);
             left: 55%;
             transform: translate(-50%, -50%);
 
+            &-popover {
+              margin-top: 20px;
+            }
+
             h1 {
               font-size: 14px;
               line-height: 20px;
@@ -157,6 +161,10 @@ $color-text: rgba(192, 192, 192, 1);
       background-color: $black;
       color: $white;
       padding: 0 60px;
+
+      &-popover {
+        margin-top: 20px;
+      }
 
       h2 {
         @media (max-width: 1000px) {
@@ -295,6 +303,10 @@ $color-text: rgba(192, 192, 192, 1);
     height: 500px;
     width: 100%;
     background-color: $black;
+
+    &-popover {
+      @include flex(center, center);
+    }
 
     h1 {
       font-size: 40px;

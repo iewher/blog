@@ -10,7 +10,19 @@ import MainClients from "../../components/main-components/main-clients";
 import MainStars from "../../components/main-components/main-stars";
 import MainNeeds from "../../components/main-components/main-needs";
 
+import { AiOutlineArrowUp } from "react-icons/ai";
+
 export const Main = () => {
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="main">
       <MainBanner />
@@ -21,6 +33,9 @@ export const Main = () => {
       <MainClients />
       <MainStars />
       <MainNeeds />
+      <button className="main-gotop" onClick={() => scrollToElement("header")}>
+        <AiOutlineArrowUp />
+      </button>
     </div>
   );
 };

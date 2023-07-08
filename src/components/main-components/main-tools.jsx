@@ -6,7 +6,7 @@ import { Popover } from "@headlessui/react";
 
 function MainTools() {
   return (
-    <div className="main-tools">
+    <div className="main-tools" id="gear">
       <div className="main-tools-left">
         <h2>The Gear cage</h2>
         <h1>The tools that we use.</h1>

@@ -1,32 +1,34 @@
 import React from "react";
 import "../../style/header/header.scss";
 
-import { Link } from "react-router-dom";
-
 export const Header = () => {
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <div className="header">
+    <div className="header" id="header">
       <div className="header-name">
-        <Link to="">
-          <button>blog-app</button>
-        </Link>
+        <button onClick={() => scrollToElement("header")}>blog-app</button>
       </div>
       <div className="header-buttons">
-        <Link to="/111">
-          <button>Business areas</button>
-        </Link>
-        <Link to="/123">
-          <button>Featured images</button>
-        </Link>
-        <Link to="/345">
-          <button>Gaer cage</button>
-        </Link>
-        <Link to="/567">
-          <button>Contact</button>
-        </Link>
-        <Link to="/789">
-          <button className="__other">Get template</button>
-        </Link>
+        <button onClick={() => scrollToElement("business")}>
+          Business areas
+        </button>
+        <button onClick={() => scrollToElement("featured")}>
+          Featured images
+        </button>
+        <button onClick={() => scrollToElement("gear")}>Gaer cage</button>
+        <button onClick={() => scrollToElement("contact")}>Contact</button>
+        <button className="__other" onClick={() => scrollToElement("get")}>
+          Get template
+        </button>
       </div>
     </div>
   );

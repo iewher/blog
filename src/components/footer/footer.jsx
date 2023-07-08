@@ -6,7 +6,7 @@ import { BsTelegram } from "react-icons/bs";
 
 export const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="get">
       <div className="footer-subscribe">
         <h1>Subscribe to our newsletter</h1>
         <p>Read about all the things we do.</p>

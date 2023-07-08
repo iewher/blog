@@ -4,15 +4,15 @@ import { Popover } from "@headlessui/react";
 
 function MainNeeds() {
   return (
-    <div className="main-needs">
+    <div className="main-needs" id="contact">
       <h1>Need help with photography or videography?</h1>
       <p>We're here for you!</p>
-      <Popover>
+      <Popover className="main-needs-popover">
         <Popover.Button>Get in touch</Popover.Button>
 
-        <Popover.Panel className="absolute z-10">
+        <Popover.Panel>
           <div>
-            <p className="main-needs-popover">
+            <p>
               The function is not available yet, this is a demo version of the
               site
             </p>

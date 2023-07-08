@@ -10,7 +10,7 @@ import { Popover } from "@headlessui/react";
 function MainWhatWeDo() {
   return (
     <div className="main-whatwedo">
-      <div className="main-whatwedo-container">
+      <div className="main-whatwedo-container" id="featured">
         <div className="main-whatwedo-container-text">
           <h1>What we do</h1>
           <p>The areas that we're specialized in.</p>

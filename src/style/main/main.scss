@@ -12,11 +12,31 @@ $color-text: rgba(192, 192, 192, 1);
   height: fit-content;
   width: 100%;
 
+  &-gotop {
+    @include flex(center, center);
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    border: none;
+    transition: 0.3s;
+
+    &:hover {
+      background: inherit;
+      color: $white;
+      border: 1px solid $white;
+      transform: scale(1.1);
+    }
+  }
+
   &-banner {
     text-align: center;
     color: $white;
     height: 768px;
-    background-image: url('../../img/main/main-banner.svg');
+    background-image: url("../../img/main/main-banner.svg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -92,10 +112,6 @@ $color-text: rgba(192, 192, 192, 1);
             left: 55%;
             transform: translate(-50%, -50%);
 
-            &-popover {
-              margin-top: 20px;
-            }
-
             h1 {
               font-size: 14px;
               line-height: 20px;
@@ -107,6 +123,7 @@ $color-text: rgba(192, 192, 192, 1);
               width: 90%;
               color: $color-text;
               word-wrap: break-word;
+              margin-top: 15px;
             }
 
             button {
@@ -272,7 +289,7 @@ $color-text: rgba(192, 192, 192, 1);
   &-stars {
     width: 100%;
     height: 600px;
-    background-image: url('../../img/main/main-stars.svg');
+    background-image: url("../../img/main/main-stars.svg");
     background-size: cover;
     @include flex(end, center);
 
@@ -306,6 +323,7 @@ $color-text: rgba(192, 192, 192, 1);
 
     &-popover {
       @include flex(center, center);
+      flex-direction: column;
     }
 
     h1 {
@@ -317,6 +335,7 @@ $color-text: rgba(192, 192, 192, 1);
     p {
       font-size: 24px;
       color: $color-text;
+      margin-top: 10px;
     }
 
     button {

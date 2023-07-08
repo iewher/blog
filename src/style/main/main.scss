@@ -324,6 +324,10 @@ $color-text: rgba(192, 192, 192, 1);
     &-popover {
       @include flex(center, center);
       flex-direction: column;
+
+      p {
+        text-align: center;
+      }
     }
 
     h1 {
